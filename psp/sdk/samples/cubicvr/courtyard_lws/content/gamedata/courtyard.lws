@@ -1,0 +1,2333 @@
+LWSC
+4
+
+RenderRangeType 0
+FirstFrame 1
+LastFrame 60
+FrameStep 1
+RenderRangeObject 0
+RenderRangeArbitrary 1-60
+PreviewFirstFrame 0
+PreviewLastFrame 3600
+PreviewFrameStep 1
+CurrentFrame 0
+FramesPerSecond 30
+ChangeScene 0
+
+LoadObjectLayer 1 10000000 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/ground.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+LoadObjectLayer 1 10000001 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/building1.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 110.98134000000000299 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 20.889039999999997832 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+LoadObjectLayer 1 10000002 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/building2.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 75.100135999999992009 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -90.240692000000009898 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+LoadObjectLayer 1 10000003 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/building3.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -82.610069000000009964 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 136.19641000000001441 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 1.5707962999999998122 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+LoadObjectLayer 1 10000004 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/building4.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -62.583412000000002706 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 27.573516999999998944 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+LoadObjectLayer 1 10000005 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/building5.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+ItemExpand 1 1
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -10.847794000000000381 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -106.95201000000000136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+LoadObjectLayer 1 10000006 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/building3.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+SchematicPosition 0.600000 -0.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -90.120093999999994594 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -72.693931999999989557 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 3.1415925000000002321 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+LoadObjectLayer 1 10000007 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/building4.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+SchematicPosition 0.600000 -0.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 50.066803000000000168 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 137.03212000000002035 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 1.5707962999999998122 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+LoadObjectLayer 1 10000008 Users/ccliffe/Dev/cubicvr/psp/samples/courtyard_lws/content/gamedata/building4.lwo
+ChangeObject 0
+ShowObject 7 3
+Group 0
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -114.31905000000000427 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 27.573516999999998944 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+AddNullObject 10000009 CamTarget
+ChangeObject 0
+ShowObject 7 3
+Group 0
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  13
+  Key 11.679977999999998417 0 0 0 0 0 0 0 0
+  Key 11.679977999999998417 5 0 0 0 0 0 0 0
+  Key 11.679977999999998417 7.5999999000000002525 0 0 0 0 0.54353761999999994359 0.2508635200000000065 0
+  Key 12.474380000000000024 8.8000002000000012714 0 0 0 0 0.17875916000000002803 1.2413830999999999616 0
+  Key 13.100120999999997906 17.133333000000000368 0 0 0 0 0 0 0
+  Key 12.474380000000000024 17.933331999999996498 0 0 0 0 -6.3417067999999998662 -3.170853399999999489 0
+  Key 3.5875604000000000937 18.333334000000000685 0 0 0 0 1.5025637999999998939 2.629486800000000013 0
+  Key 16.60642999999999958 19.033332999999998947 0 0 0 0 17.358613999999999322 35.543826999999993177 0
+  Key 56.490002000000004045 20.466666999999993948 0 0 0 0 34.510249999999999204 21.669225999999998322 0
+  Key 72.785904000000002156 21.366666999999999632 0 0 0 0 -8.1649054999999997051 -24.494718999999996356 0
+  Key 23.830378000000003169 24.06666799999999995 0 0 0 0 -1.6906258000000000674 -1.1896994999999999099 0
+  Key 69.90557900000000302 25.966666999999993948 0 0 0 0 -5.0035304999999992148 -5.0035304999999992148 0
+  Key 13.82331699999999941 27.866666999999999632 0 0 0 0 -56.074061999999997852 -24.883410999999998836 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  13
+  Key 0 0 0 0 0 0 0 -37.922691000000000372 0
+  Key -37.924796999999998093 5 0 0 0 0 -7.9839230000000007692 -4.1516399000000001607 0
+  Key -12.135562999999999434 7.5999999000000002525 0 0 0 0 34.709351000000005172 16.019698999999999245 0
+  Key 12.804251999999999967 8.8000002000000012714 0 0 0 0 3.1587008999999999226 21.935422999999996563 0
+  Key 12.958560999999999552 17.133333000000000368 0 0 0 0 0 0 0
+  Key 12.804251999999999967 17.933331999999996498 0 0 0 0 -0.10287285000000000179 -0.051436424000000001422 0
+  Key 12.804251999999999967 18.333334000000000685 0 0 0 0 0 0 0
+  Key 12.804251999999999967 19.033332999999998947 0 0 0 0 0 0 0
+  Key 12.804251999999999967 20.466666999999993948 0 0 0 0 0 0 0
+  Key 12.804251999999999967 21.366666999999999632 0 0 0 0 0 0 0
+  Key 12.804251999999999967 24.06666799999999995 0 0 0 0 0 0 0
+  Key 12.804251999999999967 25.966666999999993948 0 0 0 0 -2.4166385999999993039 -2.4166385999999993039 0
+  Key 7.9709744000000002373 27.866666999999999632 0 0 0 0 -4.8325705999999994944 -4.1018724000000004182 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  13
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 5 0 0 0 0 -57.725380000000008351 -30.017197000000003015 0
+  Key -87.742576999999997156 7.5999999000000002525 0 0 0 0 -0.70750087000000005943 -0.32653886000000009737 0
+  Key -1.034039699999999895 8.8000002000000012714 0 0 0 0 11.201618999999999104 77.789024000000011938 0
+  Key 1.2480642999999997933 17.133333000000000368 0 0 0 0 0 0 0
+  Key -1.034039699999999895 17.933331999999996498 0 0 0 0 -18.179788999999999533 -9.0898943000000009818 0
+  Key -26.021618000000000137 18.333334000000000685 0 0 0 0 -16.84178500000000156 -29.473123999999998546 0
+  Key -47.348948999999997511 19.033332999999998947 0 0 0 0 -3.5498353999999996411 -7.2687105999999994665 0
+  Key -36.84016399999999436 20.466666999999993948 0 0 0 0 37.486538000000003024 23.538059000000000509 0
+  Key 13.67564900000000172 21.366666999999999632 0 0 0 0 19.457330999999999932 58.371993999999993719 0
+  Key 40.989159000000000788 24.06666799999999995 0 0 0 0 -57.274386999999997272 -40.304198999999997 0
+  Key -83.902939000000003489 25.966666999999993948 0 0 0 0 -65.355887999999978888 -65.355887999999978888 0
+  Key -89.722617999999997096 27.866666999999999632 0 0 0 0 -5.8188285999999997955 2.4566695999999992317 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  4
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 17.133333000000000368 0 0 0 0 0 0 0
+  Key 0 17.933331999999996498 0 0 0 0 -0.00032908565000000007022 -0.011888219000000000217 0
+  Key -0.012217305000000001219 46.83333200000001284 0 0 0 0 -0.012217186999999999145 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  4
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 17.133333000000000368 0 0 0 0 0 0 0
+  Key 0 17.933331999999996498 0 0 0 0 0 0 0
+  Key 0 46.83333200000001284 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  4
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 17.133333000000000368 0 0 0 0 0 0 0
+  Key 0 17.933331999999996498 0 0 0 0 0 0 0
+  Key 0 46.83333200000001284 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  4
+  Key 1 0 0 0 0 0 0 -0.0082099894000000010058 0
+  Key 0.99178988000000001257 17.133333000000000368 0 0 0 0 0 0 0
+  Key 1 17.933331999999996498 0 0 0 0 0.093562149000000011112 0.12864795000000001091 0
+  Key 1.213999999999999968 19.033332999999998947 0 0 0 0 0.2139459600000000461 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  4
+  Key 1 0 0 0 0 0 0 0 0
+  Key 1 17.133333000000000368 0 0 0 0 0 0 0
+  Key 1 17.933331999999996498 0 0 0 0 0 0 0
+  Key 1 19.033332999999998947 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  4
+  Key 1 0 0 0 0 0 0 0.0029156926999999994814 0
+  Key 1.0029156999999999655 17.133333000000000368 0 0 0 0 0 0 0
+  Key 1 17.933331999999996498 0 0 0 0 -0.03322767100000000029 -0.045688043999999997102 0
+  Key 0.92400002000000003299 19.033332999999998947 0 0 0 0 -0.075980790000000006379 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+SubPatchLevel 3 3
+APSDisplay
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+APSRender
+{ APS
+  Version 1
+  Method 0
+  { VParm
+    { ObjectLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonLevel
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          3
+          0
+        }
+      }
+    }
+    { PolygonPixelSize
+      0
+      { VariantParameter
+        3
+        0
+        { ParameterValue
+          256
+          0
+        }
+      }
+    }
+  }
+}
+NodeDisplacement 0
+{ Nodal_Block
+  { Root
+    Location 0 0
+    Zoom 1
+    Disabled 1
+  }
+  Version 1
+  { Nodes
+    Server "Displacement"
+    { Tag
+      RealName "Displacement"
+      Name "Displacement"
+      Coordinates -10 -10
+      Mode 1
+      { Data
+      }
+      Preview ""
+      Comment ""
+    }
+  }
+  { Connections
+  }
+}
+NodeDisplacementOrder 0
+ShadowOptions 7
+
+AmbientColor 1 1 1
+AmbientIntensity 0
+DoubleSidedAreaLights 1
+RadiosityType 1
+RadiosityInterpolated 0
+RadiosityTransparency 0
+RadiosityIntensity 1
+RadiosityRays 48
+RadiosityDirectionalRays 1
+BlurRadiosity 1
+
+AddLight 20000000
+LightName Light
+ShowLight 1 5
+LightMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 3.9649143000000002246 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 142.03704999999999359 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 166.65704000000002338 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.1031210000000006843 0 0 0 0 0 0 0.75783205000000009033 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0.95644128000000006029 0 0 0 0 0 0 0.55767697000000004959 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+LightColor 1 1 0.843137
+LightIntensity 0.795
+AffectCaustics 1
+LightType 1
+ShadowType 1
+ShadowColor 0 0 0
+
+AddLight 20000001
+LightName Light
+ShowLight 1 5
+SchematicPosition 0.600000 -0.400000
+LightMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -106.63057999999999481 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 142.03704999999999359 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -114.95777999999999963 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.1031210000000006843 0 0 0 0 0 0 0.75783205000000009033 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0.95644128000000006029 0 0 0 0 0 0 0.55767697000000004959 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+LightColor 1 1 0.843137
+LightIntensity 0.37
+AffectCaustics 1
+LightType 1
+ShadowType 1
+ShadowColor 0 0 0
+
+AddLight 20000002
+LightName Light
+ShowLight 1 5
+SchematicPosition 1.200000 -0.800000
+LightMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 139.3577900000000227 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 142.03704999999999359 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -147.07676999999998202 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.1031210000000006843 0 0 0 0 0 0 0.75783205000000009033 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0.95644128000000006029 0 0 0 0 0 0 0.55767697000000004959 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+LightColor 1 1 0.843137
+LightIntensity 0.505
+AffectCaustics 1
+LightType 1
+ShadowType 1
+ShadowColor 0 0 0
+
+AddLight 20000003
+LightName Light
+ShowLight 1 5
+SchematicPosition 1.800000 -1.200000
+LightMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 7.1247996999999996248 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 13.018126999999998006 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 14.142056000000000182 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.1031210000000006843 0 0 0 0 0 0 0.75783205000000009033 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0.95644128000000006029 0 0 0 0 0 0 0.55767697000000004959 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+LightColor 1 1 0.843137
+LightIntensity 0.695
+AffectCaustics 1
+LightType 1
+ShadowType 1
+ShadowColor 0 0 0
+
+AddCamera 30000000
+CameraName Camera
+ShowCamera 1 2
+CameraMotion
+NumChannels 6
+Channel 0
+{ Envelope
+  18
+  Key -314.00760000000002492 0 0 0 0 0 0 110.74936999999999898 0
+  Key -203.24831000000000358 3.0999998999999998084 0 0 0 0 211.34937999999999647 197.71393999999997959 0
+  Key 95.055716999999987138 6 0 0 0 0 240.10505999999998039 107.63329999999999131 0
+  Key 144.49004999999999654 7.3000001999999986069 0 0 0 0 -41.838100000000004286 -41.838100000000004286 0
+  Key 11.37951800000000091 8.6000003999999989901 0 0 0 0 -119.48199000000001035 -45.954612999999994827 0
+  Key -20.946553999999999007 9.1000003999999989901 0 0 0 0 -19.229171999999998377 -23.075005999999998352 0
+  Key -30.924661999999997875 9.699999800000000505 0 0 0 0 0.92261404000000002412 0.97387033999999994549 0
+  Key -19.050070000000001613 10.333332999999999657 0 0 0 0 21.723765999999997689 20.580409999999996984 0
+  Key 11.379514000000002127 10.933332999999997526 0 0 0 0 32.320720999999998924 37.707508000000004245 0
+  Key 50.978161000000000058 11.633332999999998592 0 0 0 0 25.684488000000001762 25.684488000000001762 0
+  Key 62.748488999999999294 12.333332999999999657 0 0 0 0 -1.5573865999999998433 -4.894643799999999878 0
+  Key 44.526131000000006566 14.533333999999999975 0 0 0 0 -93.885772999999986155 -59.745491000000001236 0
+  Key -90.882773999999983516 15.933332999999997526 0 0 0 0 -59.490715000000008672 -89.236075999999997066 0
+  Key -104.20066000000001338 18.033332999999998947 0 0 0 0 124.10596999999998502 112.28634999999999877 0
+  Key 145.50954999999996176 19.933331999999996498 0 0 0 0 139.27718999999999028 163.71178999999997927 0
+  Key 198.78831000000002405 22.166665999999999315 0 0 0 0 -55.161808000000000618 -79.037811000000004924 0
+  Key 11.309929000000000343 25.366666999999999632 0 0 0 0 -93.739197000000004323 -93.739197000000004323 0
+  Key 11.309929000000000343 28.56666799999999995 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  18
+  Key 39.047820999999991898 0 0 0 0 0 0 0 0
+  Key 39.047820999999991898 3.0999998999999998084 0 0 0 0 0 0 0
+  Key 39.047820999999991898 6 0 0 0 0 -7.5181922999999999391 -3.3702239999999998865 0
+  Key 28.159405000000003128 7.3000001999999986069 0 0 0 0 -11.688338999999999146 -11.688338999999999146 0
+  Key 15.671142999999998935 8.6000003999999989901 0 0 0 0 -10.097901999999999489 -3.8838085999999996112 0
+  Key 14.177692999999999657 9.1000003999999989901 0 0 0 0 -0.6619418900000002548 -0.79433023999999996523 0
+  Key 14.214869999999997674 9.699999800000000505 0 0 0 0 0.40350676000000007537 0.42592382000000006403 0
+  Key 15.007123999999999242 10.333332999999999657 0 0 0 0 0.74781543000000016974 0.70845669999999993927 0
+  Key 15.671142999999998935 10.933332999999997526 0 0 0 0 -0.15762386999999999926 -0.18389453000000000049 0
+  Key 14.66560600000000214 11.633332999999998592 0 0 0 0 0 0 0
+  Key 15.671142999999998935 12.333332999999999657 0 0 0 0 4.353544199999999087 13.682567999999999842 0
+  Key 32.701717000000002145 14.533333999999999975 0 0 0 0 18.571461000000002883 11.818202999999998681 0
+  Key 46.060805999999999472 15.933332999999997526 0 0 0 0 17.499499999999997613 26.249251999999998475 0
+  Key 76.450469999999995707 18.033332999999998947 0 0 0 0 15.954574000000000922 14.435090000000000643 0
+  Key 76.450469999999995707 19.933331999999996498 0 0 0 0 0 0 0
+  Key 76.450469999999995707 22.166665999999999315 0 0 0 0 -27.224974000000003116 -39.008919000000005894 0
+  Key 10.216578999999999411 25.366666999999999632 0 0 0 0 -35.454612999999994827 -35.454612999999994827 0
+  Key 5.5412445000000003503 28.56666799999999995 0 0 0 0 -4.6749290999999999485 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  18
+  Key -301.81995000000000573 0 0 0 0 0 0 506.2481099999999401 0
+  Key 204.47352999999998246 3.0999998999999998084 0 0 0 0 286.80463000000003149 268.30111999999996897 0
+  Key 253.28579999999999472 6 0 0 0 0 -17.018315999999998667 -7.6289004999999985301 0
+  Key 179.82631000000003496 7.3000001999999986069 0 0 0 0 -96.92166900000002272 -96.92166900000002272 0
+  Key 59.442458999999999492 8.6000003999999989901 0 0 0 0 -106.16216000000000008 -40.831599999999994566 0
+  Key 32.832550000000004786 9.1000003999999989901 0 0 0 0 -27.05444699999999969 -32.465336000000007743 0
+  Key -0.077326536000000015147 9.699999800000000505 0 0 0 0 -31.318380000000001218 -33.058288999999994928 0
+  Key -31.544121000000000521 10.333332999999999657 0 0 0 0 -25.899937000000001319 -24.536782999999999788 0
+  Key -50.514045999999993342 10.933332999999997526 0 0 0 0 -3.628379300000000196 -4.2331090000000006768 0
+  Key -39.405608999999998332 11.633332999999998592 0 0 0 0 25.243465000000000487 25.243465000000000487 0
+  Key -0.027114152999999998478 12.333332999999999657 0 0 0 0 42.306098999999996124 132.96202000000002386 0
+  Key 135.86252000000001772 14.533333999999999975 0 0 0 0 83.536293000000014786 53.159458000000000766 0
+  Key 136.66864000000001056 15.933332999999997526 0 0 0 0 -87.69628099999999904 -131.54442000000000235 0
+  Key -83.378188999999991893 18.033332999999998947 0 0 0 0 -149.28180000000000405 -135.0644800000000032 0
+  Key -147.67763999999999669 19.933331999999996498 0 0 0 0 98.44996600000001763 115.72189000000000192 0
+  Key 130.79366999999996324 22.166665999999999315 0 0 0 0 92.555930999999986852 132.61744999999999095 0
+  Key 77.495743000000004486 25.366666999999999632 0 0 0 0 -26.648964000000002983 -26.648964000000002983 0
+  Key 77.495743000000004486 28.56666799999999995 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  3
+  Key 0.82341545999999998795 0 0 0 0 0 0 -3.645899299999999954 0
+  Key -2.8226525999999991789 6 0 0 0 0 1.613852999999999982 0.69933628999999997156 0
+  Key 3.1366047999999997486 8.6000003999999989901 0 0 0 0 5.9586205000000003196 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  3
+  Key 0.087909802999999994699 0 0 0 0 0 0 0.05789679300000000195 0
+  Key 0.14580928000000004108 6 0 0 0 0 0.116232190000000013 0.050367280999999999858 0
+  Key 0.25450927000000000966 8.6000003999999989901 0 0 0 0 0.1086883800000000011 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  3
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 6 0 0 0 0 0 0 0
+  Key 0 8.6000003999999989901 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+HController 1
+PController 1
+PathAlignLookAhead 0.033
+PathAlignMaxLookSteps 10
+PathAlignReliableDist 0.001
+TargetItem 10000009
+ZoomFactor 3.2
+ResolutionMultiplier 1.0
+FrameSize 480 272
+PixelAspect 1.764706
+MaskPosition 0 0 640 480
+MotionBlur 0
+MotionBlurPasses 1
+ShutterEfficiency 1
+Oversampling 0
+FieldRendering 0
+ApertureHeight 0.015
+DepthOfField 0
+FocalDistance 1
+LensFStop 4
+DiaphragmSides 0
+DiaphragmRotation 0
+AASamples 1
+Sampler 0
+UseGlobalResolution 0
+UseGlobalMask 0
+UseGlobalBlur 0
+Plugin CameraHandler 1 Classic
+EndPlugin
+
+GlobalFrameSize 640 480
+GlobalMultiplier 1.0
+GlobalFieldRendering 0
+GlobalMotionBlur 0
+GlobalMaskPosition 0 0 640 480
+GlobalFilmHeight 0.015
+GlobalPixelAspect 1
+
+Antialiasing 0
+AntiAliasingLevel -1
+ReconstructionFilter 0
+AdaptiveSampling 0
+
+SolidBackdrop 1
+BackdropColor 0 0 0
+ZenithColor 0 0.1569 0.3137
+SkyColor 0.4706 0.7059 0.9412
+GroundColor 0.1961 0.1569 0.1176
+NadirColor 0.3922 0.3137 0.2353
+FogType 0
+FogMinDistance 0
+FogMaxDistance 1
+FogMinAmount 0
+FogMaxAmount 1
+FogColor 0.5098 0.5098 0.549
+BackdropFog 0
+VolumeClipDiscance 0.1
+DitherIntensity 1
+AnimatedDither 0
+
+RenderMode 2
+RayTraceEffects 0
+DepthBufferAA 0
+RenderLines 1
+RayRecursionLimit 16
+DataOverlayLabel  
+SaveRGB 0
+SaveAlpha 0
+
+ViewConfiguration 0
+DefineView 0
+ViewType 7
+ViewLevel 6
+ViewAimpoint 0 0 0
+ViewRotation 252.5 12.19998 0
+ViewZoomFactor 5.426417
+
+GridNumber 80
+GridSize 100
+CameraViewBG 0
+ShowMotionPath 1
+ShowFogRadius 0
+ShowFogEffect 0
+ShowFieldChart 0
+OverlayColor_fv 0 0 0
+MeshBackgroundGroup 1
+
+CurrentObject 0
+CurrentLight 0
+CurrentCamera 0
+GraphEditorData
+{ GraphEd_Favorites
+}
+{ GE_Expression_Lib
+  1
+}
+ImageEditorData
+NumberOfClips 8
+Clip 0
+{ ClipObject
+  "cement_trim_top.tga"
+  128
+  0
+}
+Clip 1
+{ ClipObject
+  "plaster_01.tga"
+  128
+  0
+}
+Clip 2
+{ ClipObject
+  "gravel.tga"
+  128
+  0
+}
+Clip 3
+{ ClipObject
+  "brick_05.tga"
+  128
+  0
+}
+Clip 4
+{ ClipObject
+  "cement_trim.tga"
+  128
+  0
+}
+Clip 5
+{ ClipObject
+  "brick_06.tga"
+  128
+  0
+}
+Clip 6
+{ ClipObject
+  "brick_02.tga"
+  128
+  0
+}
+Clip 7
+{ ClipObject
+  "brick_01.tga"
+  128
+  0
+}

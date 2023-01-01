@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$inethelper_8c.html" title="src/sdk/inethelper.c" alt="" coords="7,82,45,109" />
+<area shape="rect" href="$modulemgr__patches_8c.html" title="src/sdk/modulemgr_patches.c" alt="" coords="69,82,106,109" />
+<area shape="rect" href="$query__mod_8c.html" title="src/sdk/query_mod.c" alt="" coords="130,82,167,109" />
+<area shape="rect" href="$threadutils_8c.html" title="src/sdk/threadutils.c" alt="" coords="191,82,229,109" />
+</map>

@@ -1,0 +1,12 @@
+prefix=/home/builder/minpspw/devpaks/003_freetype/build/freetype-2.4.3/../target/psp
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: FreeType 2
+Description: A free, high-quality, and portable font engine.
+Version: 12.1.6
+Requires:
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz 
+Cflags: -I${includedir}/freetype2 -I${includedir}

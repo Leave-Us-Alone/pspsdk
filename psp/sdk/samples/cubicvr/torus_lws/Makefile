@@ -1,0 +1,45 @@
+TARGET = CubicVR_Torus
+OBJS = main.o Gamepad.o
+
+PSPSDK=$(shell psp-config --pspsdk-path)
+INCDIR = $(PSPSDK)/../include/bullet
+
+CFLAGS = -G0 -Wall
+CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti -DARCH_PSP
+ASFLAGS = $(CFLAGS)
+
+BUILD_PRX = 1
+PSP_FW_VERSION = 390
+PSP_LARGE_MEMORY = 1
+
+LIBS = -lcubicvr -lbulletdynamics -lbulletcollision -lbulletmath -lpspgum -lpspgu -lpspaudiolib -lpspaudio -lpsppower -lpsprtc -lm -lstdc++
+
+EXTRA_TARGETS = EBOOT.PBP
+PSP_EBOOT_TITLE = CubicVR - LWSC - Torus
+
+include $(PSPSDK)/lib/build.mak
+
+delete:
+	rm -Rf $(TARGET)
+	rm -Rf $(TARGET)%
+	
+upload:
+	cp -R $(TARGET) $(PSPGAMEDIR)
+	cp -R $(TARGET)% $(PSPGAMEDIR) 
+	rsync -rvc --exclude=".svn" ./content/gamedata/ $(PSPGAMEDIR)$(TARGET)/
+
+debugfolder:
+	rm -rf debug/* debug/.svn
+	cp -R *.elf debug/ 
+	cp -R ./content/gamedata/ debug/
+
+uploadcontent:
+	cp -R ./content/gamedata/* $(PSPGAMEDIR)$(TARGET)
+	
+doeverything: delete clean kxploit upload uploadcontent
+
+cubicvr:
+	./make_cvr
+
+deplus: cubicvr doeverything
+

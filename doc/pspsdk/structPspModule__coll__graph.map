@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$structPspModuleInfo.html" title="PspModuleInfo" alt="" coords="13,117,50,143" />
+<area shape="rect" href="$structPspLibImport.html" title="PspLibImport" alt="" coords="161,117,198,143" />
+<area shape="rect" href="$structPspEntry.html" title="PspEntry" alt="" coords="117,7,154,34" />
+<area shape="rect" href="$structPspLibExport.html" title="PspLibExport" alt="" coords="74,117,112,143" />
+<area shape="rect" href="$structPspModuleImport.html" title="PspModuleImport" alt="" coords="193,7,230,34" />
+<area shape="rect" href="$structPspModuleExport.html" title="PspModuleExport" alt="" coords="42,7,80,34" />
+</map>

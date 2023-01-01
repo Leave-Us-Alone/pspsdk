@@ -1,0 +1,69 @@
+'\" t
+.\"     Title: zzip_file_real
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_FILE_REAL" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_file_real, zzip_dir_real, zzip_realdir, zzip_realfd \- \&.\&.\&.
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/lib\&.h>
+.fi
+.ft
+.HP \w'int\ zzip_file_real('u
+.BI "int zzip_file_real((ZZIP_FILE\ *\ fp));"
+.HP \w'int\ zzip_dir_real('u
+.BI "int zzip_dir_real((ZZIP_DIR\ *\ dir));"
+.HP \w'void\ *\ zzip_realdir('u
+.BI "void * zzip_realdir((ZZIP_DIR\ *\ dir));"
+.HP \w'int\ zzip_realfd('u
+.BI "int zzip_realfd((ZZIP_FILE\ *\ fp));"
+.SH "DESCRIPTION"
+.PP
+The
+\fBzzip_dir_real\fR
+function checks if the ZZIP_DIR\-handle is wrapping a real directory or a zip\-archive\&. Returns 1 for a stat\'able directory, and 0 for a handle to zip\-archive\&.
+.PP
+The
+\fBzzip_realdir\fR
+function returns the posix DIR* handle (if one exists)\&. Check before with
+\fBzzip_dir_real\fR
+if the the ZZIP_DIR points to a real directory\&.
+.PP
+The
+\fBzzip_realfd\fR
+function returns the posix file descriptor (if one exists)\&. Check before with
+\fBzzip_file_real\fR
+if the the ZZIP_FILE points to a real file\&.
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 2000,2001,2002,2003 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

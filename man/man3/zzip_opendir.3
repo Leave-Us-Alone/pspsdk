@@ -1,0 +1,54 @@
+'\" t
+.\"     Title: zzip_opendir
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_OPENDIR" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_opendir, zzip_opendir_ext_io \- \&.\&.\&.
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/lib\&.h>
+.fi
+.ft
+.HP \w'ZZIP_DIR\ *\ zzip_opendir('u
+.BI "ZZIP_DIR * zzip_opendir((zzip_char_t\ *\ filename));"
+.HP \w'ZZIP_DIR\ *\ zzip_opendir_ext_io('u
+.BI "ZZIP_DIR * zzip_opendir_ext_io((zzip_char_t\ *\ filename,\ int\ o_modes,\ zzip_strings_t\ *\ ext,\ zzip_plugin_io_t\ io));"
+.SH "DESCRIPTION"
+.PP
+The
+\fBzzip_opendir_ext_io\fR
+function uses explicit ext and io instead of the internal defaults, setting them to zero is equivalent to
+\fBzzip_opendir\fR
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 1999,2000,2001,2002,2003 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

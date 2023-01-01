@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$structPspUtilitySavedataSFOParam.html" title="title, savedataTitle, detail: parts of the unencrypted SFO data, it contains what the VSH and standar..." alt="" coords="101,10,138,37" />
+<area shape="rect" href="$structPspUtilitySavedataListSaveNewData.html" title="PspUtilitySavedataListSaveNewData" alt="" coords="98,173,141,200" />
+<area shape="rect" href="$structPspUtilitySavedataFileData.html" title="PspUtilitySavedataFileData" alt="" coords="9,141,46,168" />
+<area shape="rect" href="$structpspUtilityDialogCommon.html" title="pspUtilityDialogCommon" alt="" coords="101,229,138,256" />
+</map>

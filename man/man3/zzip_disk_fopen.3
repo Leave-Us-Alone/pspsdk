@@ -1,0 +1,80 @@
+'\" t
+.\"     Title: zzip_disk_fopen
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_DISK_FOPEN" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_disk_fopen, zzip_disk_entry_fopen, zzip_disk_fread, zzip_disk_fclose, zzip_disk_feof \- openening a file part wrapped within a (mmapped) zip archive
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/mmapped\&.h>
+.fi
+.ft
+.HP \w'zzip__new__\ ZZIP_DISK_FILE\ *\ zzip_disk_fopen('u
+.BI "zzip__new__ ZZIP_DISK_FILE * zzip_disk_fopen((ZZIP_DISK\ *\ disk,\ char\ *filename));"
+.HP \w'zzip__new__\ ZZIP_DISK_FILE\ *\ zzip_disk_entry_fopen('u
+.BI "zzip__new__ ZZIP_DISK_FILE * zzip_disk_entry_fopen((ZZIP_DISK\ *\ disk,\ ZZIP_DISK_ENTRY\ *\ entry));"
+.HP \w'zzip_size_t\ zzip_disk_fread('u
+.BI "zzip_size_t zzip_disk_fread((void\ *ptr,\ zzip_size_t\ sized,\ zzip_size_t\ nmemb,\ ZZIP_DISK_FILE\ *\ file));"
+.HP \w'int\ zzip_disk_fclose('u
+.BI "int zzip_disk_fclose((ZZIP_DISK_FILE\ *\ file));"
+.HP \w'int\ zzip_disk_feof('u
+.BI "int zzip_disk_feof((ZZIP_DISK_FILE\ *\ file));"
+.SH "DESCRIPTION"
+.PP
+The
+\fBzzip_disk_fopen\fR
+function opens a file found by name, so it does a search into the zip central directory with
+\fBzzip_disk_findfile\fR
+and whatever is found first is given to
+\fBzzip_disk_entry_fopen\fR
+.PP
+the ZZIP_DISK_FILE* is rather simple in just encapsulating the arguments given to the
+\fBzzip_disk_entry_fopen\fR
+function plus a zlib deflate buffer\&. Note that the ZZIP_DISK pointer does already contain the full mmapped file area of a zip disk, so open()ing a file part within that area happens to be a lookup of its bounds and encoding\&. That information is memorized on the ZZIP_DISK_FILE so that subsequent _read() operations will be able to get the next data portion or return an eof condition for that file part wrapped in the zip archive\&.
+.PP
+The
+\fBzzip_disk_fread\fR
+function reads more bytes into the output buffer specified as arguments\&. The return value is null on eof or error, the stdio\-like interface can not distinguish between these so you need to check with
+\fBzzip_disk_feof\fR
+for the difference\&.
+.PP
+The
+\fBzzip_disk_fclose\fR
+function releases any zlib decoder info needed for decompression and dumps the ZZIP_DISK_FILE* then\&.
+.PP
+The
+\fBzzip_disk_feof\fR
+function allows to distinguish an error from an eof condition\&. Actually, if we found an error but we did already reach eof then we just keep on saying that it was an eof, so the app can just continue\&.
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 2003,2004,2006 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

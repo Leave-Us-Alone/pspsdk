@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$structScePspFRect.html" title="ScePspFRect" alt="" coords="13,7,50,34" />
+<area shape="rect" href="$structScePspFVector4.html" title="ScePspFVector4" alt="" coords="74,7,111,34" />
+<area shape="rect" href="$structScePspIRect.html" title="ScePspIRect" alt="" coords="135,7,173,34" />
+<area shape="rect" href="$structScePspIVector4.html" title="ScePspIVector4" alt="" coords="197,7,234,34" />
+<area shape="rect" href="$structScePspFQuaternion.html" title="ScePspFQuaternion" alt="" coords="258,7,295,34" />
+<area shape="rect" href="$structScePspFColor.html" title="ScePspFColor" alt="" coords="319,7,357,34" />
+</map>

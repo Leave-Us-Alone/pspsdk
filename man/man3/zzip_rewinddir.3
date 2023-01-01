@@ -1,0 +1,83 @@
+'\" t
+.\"     Title: zzip_rewinddir
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_REWINDDIR" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_rewinddir, zzip_telldir, zzip_seekdir, zzip_telldir32, zzip_seekdir32 \- 
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/lib\&.h>
+.fi
+.ft
+.HP \w'void\ zzip_rewinddir('u
+.BI "void zzip_rewinddir((ZZIP_DIR\ *\ dir));"
+.HP \w'zzip_off_t\ zzip_telldir('u
+.BI "zzip_off_t zzip_telldir((ZZIP_DIR\ *\ dir));"
+.HP \w'void\ zzip_seekdir('u
+.BI "void zzip_seekdir((ZZIP_DIR\ *\ dir,\ zzip_off_t\ offset));"
+.HP \w'long\ zzip_telldir32('u
+.BI "long zzip_telldir32((ZZIP_DIR\ *\ dir));"
+.HP \w'void\ zzip_seekdir32('u
+.BI "void zzip_seekdir32((ZZIP_DIR\ *\ dir,\ long\ offset));"
+.SH "DESCRIPTION"
+.PP
+The
+\fBzzip_rewinddir\fR
+function is the equivalent of a
+\fBrewinddir(2)\fR
+for a realdir or the zipfile in place of a directory\&. The ZZIP_DIR handle returned from
+\fBzzip_opendir\fR
+has a flag saying realdir or zipfile\&. As for a zipfile, the filenames will include the filesubpath, so take care\&.
+.PP
+The
+\fBzzip_telldir\fR
+function is the equivalent of
+\fBtelldir(2)\fR
+for a realdir or zipfile\&.
+.PP
+The
+\fBzzip_seekdir\fR
+function is the equivalent of
+\fBseekdir(2)\fR
+for a realdir or zipfile\&.
+.PP
+The
+\fBzzip_telldir32\fR
+function is provided for users who can not use any largefile\-mode\&.
+.PP
+The
+\fBzzip_seekdir32\fR
+function is provided for users who can not use any largefile\-mode\&.
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 1999,2000,2001,2002,2003 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

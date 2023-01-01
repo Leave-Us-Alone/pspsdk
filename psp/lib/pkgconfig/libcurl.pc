@@ -1,0 +1,10 @@
+prefix=/home/builder/minpspw/devpaks/035_libcurl/build/libcurl/../target/psp
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libcurl
+Description: Library to transfer files with ftp, http, etc.
+Version: 7.15.1
+Libs: -L${libdir} -lcurl -Lc:/MinGW/msys/1.0/pspsdk/psp/lib -Lc:/MinGW/msys/1.0/pspsdk/psp/sdk/lib -lc -lpspnet_inet -lpspnet_resolver -lpspuser -lz
+Cflags: -I${includedir}

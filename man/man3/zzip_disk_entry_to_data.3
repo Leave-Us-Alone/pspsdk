@@ -1,0 +1,73 @@
+'\" t
+.\"     Title: zzip_disk_entry_to_data
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_DISK_ENTRY_TO_D" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_disk_entry_to_data, zzip_disk_entry_to_file_header, zzip_disk_entry_strdup_name, zzip_disk_entry_strdup_comment \- helper functions for (mmapped) zip access api
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/mmapped\&.h>
+.fi
+.ft
+.HP \w'zzip_byte_t\ *\ zzip_disk_entry_to_data('u
+.BI "zzip_byte_t * zzip_disk_entry_to_data((ZZIP_DISK\ *\ disk,\ struct\ zzip_disk_entry\ *\ entry));"
+.HP \w'struct\ zzip_file_header\ *\ zzip_disk_entry_to_file_header('u
+.BI "struct zzip_file_header * zzip_disk_entry_to_file_header((ZZIP_DISK\ *\ disk,\ struct\ zzip_disk_entry\ *entry));"
+.HP \w'zzip__new__\ char\ *\ zzip_disk_entry_strdup_name('u
+.BI "zzip__new__ char * zzip_disk_entry_strdup_name((ZZIP_DISK\ *\ disk,\ struct\ zzip_disk_entry\ *entry));"
+.HP \w'zzip__new__\ char\ *\ zzip_disk_entry_strdup_comment('u
+.BI "zzip__new__ char * zzip_disk_entry_strdup_comment((ZZIP_DISK\ *\ disk,\ struct\ zzip_disk_entry\ *entry));"
+.SH "DESCRIPTION"
+.PP
+The
+\fBzzip_disk_entry_to_data\fR
+function augments the other zzip_disk_entry_* helpers: here we move a disk_entry pointer (as returned by _find* functions) into a pointer to the data block right after the file_header\&. Only disk\->buffer would be needed to perform the seek but we check the mmapped range end as well\&.
+.PP
+The
+\fBzzip_disk_entry_to_file_header\fR
+function does half the job of
+\fBzzip_disk_entry_to_data\fR
+where it can augment with
+\fBzzip_file_header_to_data\fR
+helper from format/fetch\&.h
+.PP
+The
+\fBzzip_disk_entry_strdup_name\fR
+function is a big helper despite its little name: in a zip file the encoded filenames are usually NOT zero\-terminated but for common usage with libc we need it that way\&. Secondly, the filename SHOULD be present in the zip central directory but if not then we fallback to the filename given in the file_header of each compressed data portion\&.
+.PP
+The
+\fBzzip_disk_entry_strdup_comment\fR
+function is similar creating a reference to a zero terminated string but it can only exist in the zip central directory entry\&.
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 2003,2004,2006 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

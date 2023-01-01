@@ -1,0 +1,102 @@
+'\" t
+.\"     Title: zzip_disk_mmap
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_DISK_MMAP" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_disk_mmap, zzip_disk_init, zzip_disk_new, zzip_disk_munmap, zzip_disk_open, zzip_disk_buffer, zzip_disk_close \- turn a filehandle into a mmapped zip disk archive handle
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/mmapped\&.h>
+.fi
+.ft
+.HP \w'zzip__new__\ ZZIP_DISK\ *\ zzip_disk_mmap('u
+.BI "zzip__new__ ZZIP_DISK * zzip_disk_mmap((int\ fd));"
+.HP \w'int\ zzip_disk_init('u
+.BI "int zzip_disk_init((ZZIP_DISK\ *\ disk,\ void\ *buffer,\ zzip_size_t\ buflen));"
+.HP \w'zzip__new__\ ZZIP_DISK\ *\ zzip_disk_new('u
+.BI "zzip__new__ ZZIP_DISK * zzip_disk_new((void));"
+.HP \w'int\ zzip_disk_munmap('u
+.BI "int zzip_disk_munmap((ZZIP_DISK\ *\ disk));"
+.HP \w'zzip__new__\ ZZIP_DISK\ *\ zzip_disk_open('u
+.BI "zzip__new__ ZZIP_DISK * zzip_disk_open((char\ *filename));"
+.HP \w'zzip__new__\ ZZIP_DISK\ *\ zzip_disk_buffer('u
+.BI "zzip__new__ ZZIP_DISK * zzip_disk_buffer((void\ *buffer,\ size_t\ buflen));"
+.HP \w'int\ zzip_disk_close('u
+.BI "int zzip_disk_close((ZZIP_DISK\ *\ disk));"
+.SH "DESCRIPTION"
+.PP
+The
+\fBzzip_disk_mmap\fR
+function uses the given file\-descriptor to detect the length of the file and calls the system
+\fBmmap(2)\fR
+to put it in main memory\&. If it is successful then a newly allocated ZZIP_DISK* is returned with disk\->buffer pointing to the mapview of the zipdisk content\&.
+.PP
+The
+\fBzzip_disk_init\fR
+function does primary initialization of a disk\-buffer struct\&.
+.PP
+The
+\fBzzip_disk_new\fR
+function allocates a new disk\-buffer with
+\fBmalloc(3)\fR
+.PP
+The
+\fBzzip_disk_munmap\fR
+function is the inverse of
+\fBzzip_disk_mmap\fR
+and using the system munmap(2) on the buffer area and
+\fBfree(3)\fR
+on the ZZIP_DISK structure\&.
+.PP
+The
+\fBzzip_disk_open\fR
+function opens the given archive by name and turn the filehandle to
+\fBzzip_disk_mmap\fR
+for bringing it to main memory\&. If it can not be
+\fBmmap(2)\fR\'ed then we slurp the whole file into a newly
+\fBmalloc(2)\fR\'ed memory block\&. Only if that fails too then we return null\&. Since handling of disk\->buffer is ambigous it should not be snatched away please\&.
+.PP
+The
+\fBzzip_disk_buffer\fR
+function will attach a buffer with a zip image that was acquired from another source than a file\&. Note that if zzip_disk_mmap fails then zzip_disk_open will fall back and try to read the full file to memory wrapping a ZZIP_DISK around the memory buffer just as the
+\fBzzip_disk_buffer\fR
+function will do\&. Note that the
+\fBzzip_disk_buffer\fR
+function will not own the buffer, it will neither be written nor free()d\&.
+.PP
+The
+\fBzzip_disk_close\fR
+function will release all data needed to access a (mmapped) zip archive, including any malloc()ed blocks, sharedmem mappings and it dumps the handle struct as well\&.
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 2003,2004,2006 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

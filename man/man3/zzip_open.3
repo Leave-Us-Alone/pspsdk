@@ -1,0 +1,92 @@
+'\" t
+.\"     Title: zzip_open
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_OPEN" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_open, zzip_open_ext_io, zzip_open_shared_io \- \&.\&.\&.
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/lib\&.h>
+.fi
+.ft
+.HP \w'ZZIP_FILE\ *\ zzip_open('u
+.BI "ZZIP_FILE * zzip_open((zzip_char_t\ *\ filename,\ int\ o_flags));"
+.HP \w'ZZIP_FILE\ *\ zzip_open_ext_io('u
+.BI "ZZIP_FILE * zzip_open_ext_io((zzip_char_t\ *\ filename,\ int\ o_flags,\ int\ o_modes,\ zzip_strings_t\ *\ ext,\ zzip_plugin_io_t\ io));"
+.HP \w'ZZIP_FILE\ *\ zzip_open_shared_io('u
+.BI "ZZIP_FILE * zzip_open_shared_io((ZZIP_FILE\ *\ stream,\ zzip_char_t\ *\ filename,\ int\ o_flags,\ int\ o_modes,\ zzip_strings_t\ *\ ext,\ zzip_plugin_io_t\ io));"
+.SH "DESCRIPTION"
+.PP
+The
+\fBzzip_open_ext_io\fR
+function uses explicit ext and io instead of the internal defaults, setting them to zero is equivalent to
+\fBzzip_open\fR
+.PP
+note that the two flag types have been split into an o_flags (for fcntl\-like openflags) and o_modes where the latter shall carry the zzip_flags and possibly accessmodes for unix filesystems\&. Since this version of zziplib can not write zipfiles, it is not yet used for anything else than zzip\-specific modeflags\&.
+.PP
+The
+\fBzzip_open_ext_io\fR
+function returns a new zzip\-handle (use
+\fBzzip_close\fR
+to return it)\&. On error the
+\fBzzip_open_ext_io\fR
+function will return null setting
+\fBerrno(3)\fR\&.
+.PP
+The
+\fBzzip_open_shared_io\fR
+function takes an extra stream argument \- if a handle has been then ext/io can be left null and the new stream handle will pick up the ext/io\&. This should be used only in specific environment however since
+\fBzzip_file_real\fR
+does not store any ext\-sequence\&.
+.PP
+The benefit for the
+\fBzzip_open_shared_io\fR
+function comes in when the old file handle was openened from a file within a zip archive\&. When the new file is in the same zip archive then the internal zzip_dir structures will be shared\&. It is even quicker, as no check needs to be done anymore trying to guess the zip archive place in the filesystem, here we just check whether the zip archive\'s filepath is a prefix part of the filename to be opened\&.
+.PP
+Note that the
+\fBzzip_open_shared_io\fR
+function is also used by
+\fBzzip_freopen\fR
+that will unshare the old handle, thereby possibly closing the handle\&.
+.PP
+The
+\fBzzip_open_shared_io\fR
+function returns a new zzip\-handle (use
+\fBzzip_close\fR
+to return it)\&. On error the
+\fBzzip_open_shared_io\fR
+function will return null setting
+\fBerrno(3)\fR\&.
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de> Tomi Ollila <Tomi\&.Ollila@iki\&.fi>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 1999,2000,2001,2002,2003 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

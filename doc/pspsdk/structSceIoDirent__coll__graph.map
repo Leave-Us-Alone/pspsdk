@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$structSceIoStat.html" title="Structure to hold the status information about a file." alt="" coords="13,130,50,157" />
+<area shape="rect" href="$structScePspDateTime.html" title="ScePspDateTime" alt="" coords="13,8,50,34" />
+</map>

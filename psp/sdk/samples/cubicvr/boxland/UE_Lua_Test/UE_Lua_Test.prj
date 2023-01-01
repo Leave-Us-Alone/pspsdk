@@ -1,0 +1,15 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Project Start=D7070600010004000A002000090000001C
+Compilable=1
+Working Time=51
+[Files]
+0=..\Makefile
+1=..\content\gamedata\input.lua
+2=..\main.cpp
+[Open Files]
+Open File0=
+Active File Display Mode=-1

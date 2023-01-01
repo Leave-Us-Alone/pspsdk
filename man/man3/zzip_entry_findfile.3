@@ -1,0 +1,83 @@
+'\" t
+.\"     Title: zzip_entry_findfile
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_ENTRY_FINDFILE" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_entry_findfile, zzip_entry_findfirst, zzip_entry_findnext, zzip_entry_free, zzip_entry_findmatch \- search for files in the (fseeko) zip central directory
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/fseeko\&.h>
+.fi
+.ft
+.HP \w'zzip__new__\ ZZIP_ENTRY\ *\ zzip_entry_findfile('u
+.BI "zzip__new__ ZZIP_ENTRY * zzip_entry_findfile((FILE\ *\ disk,\ char\ *filename,\ ZZIP_ENTRY\ *\ _zzip_restrict\ entry,\ zzip_strcmp_fn_t\ compare));"
+.HP \w'zzip__new__\ ZZIP_ENTRY\ *\ zzip_entry_findfirst('u
+.BI "zzip__new__ ZZIP_ENTRY * zzip_entry_findfirst((FILE\ *\ disk));"
+.HP \w'zzip__new__\ ZZIP_ENTRY\ *\ zzip_entry_findnext('u
+.BI "zzip__new__ ZZIP_ENTRY * zzip_entry_findnext((ZZIP_ENTRY\ *\ _zzip_restrict\ entry));"
+.HP \w'int\ zzip_entry_free('u
+.BI "int zzip_entry_free((ZZIP_ENTRY\ *\ entry));"
+.HP \w'zzip__new__\ ZZIP_ENTRY\ *\ zzip_entry_findmatch('u
+.BI "zzip__new__ ZZIP_ENTRY * zzip_entry_findmatch((FILE\ *\ disk,\ char\ *filespec,\ ZZIP_ENTRY\ *\ _zzip_restrict\ entry,\ zzip_fnmatch_fn_t\ compare,\ int\ flags));"
+.SH "DESCRIPTION"
+.PP
+The
+\fBzzip_entry_findfile\fR
+function is given a filename as an additional argument, to find the disk_entry matching a given filename\&. The compare\-function is usually strcmp or strcasecmp or perhaps strcoll, if null then strcmp is used\&. \- use null as argument for "old"\-entry when searching the first matching entry, otherwise the last returned value if you look for other entries with a special "compare" function (if null then a doubled search is rather useless with this variant of _findfile)\&. If no further entry is found then null is returned and any "old"\-entry gets already free()d\&.
+.PP
+The
+\fBzzip_entry_findfirst\fR
+function is the first call of all the zip access functions here\&. It contains the code to find the first entry of the zip central directory\&. Here we require the stdio handle to represent a real zip file where the disk_trailer is _last_ in the file area, so that its position would be at a fixed offset from the end of the file area if not for the comment field allowed to be of variable length (which needs us to do a little search for the disk_tailer)\&. However, in this simple implementation we disregard any disk_trailer info telling about multidisk archives, so we just return a pointer to the first entry in the zip central directory of that file\&.
+.PP
+For an actual means, we are going to search backwards from the end of the mmaped block looking for the PK\-magic signature of a disk_trailer\&. If we see one then we check the rootseek value to find the first disk_entry of the root central directory\&. If we find the correct PK\-magic signature of a disk_entry over there then we assume we are done and we are going to return a pointer to that label\&.
+.PP
+The return value is a pointer to the first zzip_disk_entry being checked to be within the bounds of the file area specified by the arguments\&. If no disk_trailer was found then null is returned, and likewise we only accept a disk_trailer with a seekvalue that points to a disk_entry and both parts have valid PK\-magic parts\&. Beyond some sanity check we try to catch a common brokeness with zip archives that still allows us to find the start of the zip central directory\&.
+.PP
+The
+\fBzzip_entry_findnext\fR
+function takes an existing "entry" in the central root directory (e\&.g\&. from zzip_entry_findfirst) and moves it to point to the next entry\&. On error it returns 0, otherwise the old entry\&. If no further match is found then null is returned and the entry already free()d\&. If you want to stop searching for matches before that case then please call
+\fBzzip_entry_free\fR
+on the cursor struct ZZIP_ENTRY\&.
+.PP
+the
+\fBzzip_entry_free\fR
+function releases the malloc()ed areas needed for zzip_entry, the pointer is invalid afterwards\&. The
+\fBzzip_entry_free\fR
+function has #define synonyms of zzip_entry_findlast(), zzip_entry_findlastfile(), zzip_entry_findlastmatch()
+.PP
+The
+\fBzzip_entry_findmatch\fR
+function uses a compare\-function with an additional argument and it is called just like fnmatch(3) from POSIX\&.2 AD:1993), i\&.e\&. the argument filespec first and the ziplocal filename second with the integer\-flags put in as third to the indirect call\&. If the platform has fnmatch available then null\-compare will use that one and otherwise we fall back to mere strcmp, so if you need fnmatch searching then please provide an implementation somewhere else\&. \- use null as argument for "after"\-entry when searching the first matching entry, or the last disk_entry return\-value to find the next entry matching the given filespec\&. If no further entry is found then null is returned and any "old"\-entry gets already free()d\&.
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 2003,2004 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

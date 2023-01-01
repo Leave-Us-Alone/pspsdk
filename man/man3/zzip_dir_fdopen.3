@@ -1,0 +1,54 @@
+'\" t
+.\"     Title: zzip_dir_fdopen
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_DIR_FDOPEN" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_dir_fdopen, zzip_dir_fdopen_ext_io \- \&.\&.\&.
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/lib\&.h>
+.fi
+.ft
+.HP \w'ZZIP_DIR\ *\ zzip_dir_fdopen('u
+.BI "ZZIP_DIR * zzip_dir_fdopen((int\ fd,\ zzip_error_t\ *\ errcode_p));"
+.HP \w'ZZIP_DIR\ *\ zzip_dir_fdopen_ext_io('u
+.BI "ZZIP_DIR * zzip_dir_fdopen_ext_io((int\ fd,\ zzip_error_t\ *\ errcode_p,\ zzip_strings_t\ *\ ext,\ const\ zzip_plugin_io_t\ io));"
+.SH "DESCRIPTION"
+.PP
+the
+\fBzzip_dir_fdopen_ext_io\fR
+function uses explicit ext and io instead of the internal defaults, setting these to zero is equivalent to
+\fBzzip_dir_fdopen\fR
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de> Tomi Ollila <too@iki\&.fi>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 1999,2000,2001,2002,2003 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

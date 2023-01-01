@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$structSceSCContext.html" title="SceSCContext" alt="" coords="13,7,50,34" />
+<area shape="rect" href="$structSceThreadContext.html" title="Thread context Structues for the thread context taken from florinsasu&#39;s post on the forums..." alt="" coords="74,7,111,34" />
+<area shape="rect" href="$structSceKernelSysClock.html" title="64&#45;bit system clock type." alt="" coords="135,7,173,34" />
+</map>

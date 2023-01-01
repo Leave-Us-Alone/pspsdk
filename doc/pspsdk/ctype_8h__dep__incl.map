@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" href="$string_8h.html" title="src/libc/string.h" alt="" coords="161,82,198,109" />
+<area shape="rect" href="$alloc_8c.html" title="src/libc/alloc.c" alt="" coords="8,157,45,184" />
+<area shape="rect" href="$libcglue_8c.html" title="src/libc/libcglue.c" alt="" coords="69,157,106,184" />
+<area shape="rect" href="$libc_2stdio_8c.html" title="src/libc/stdio.c" alt="" coords="130,157,168,184" />
+<area shape="rect" href="$stdlib_8c.html" title="src/libc/stdlib.c" alt="" coords="192,157,229,184" />
+<area shape="rect" href="$string_8c.html" title="src/libc/string.c" alt="" coords="253,157,290,184" />
+<area shape="rect" href="$xprintf_8c.html" title="src/libc/xprintf.c" alt="" coords="314,157,352,184" />
+</map>

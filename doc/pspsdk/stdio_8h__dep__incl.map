@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$assert_8h.html" title="src/libc/assert.h" alt="" coords="8,82,45,109" />
+<area shape="rect" href="$libc_2stdio_8c.html" title="src/libc/stdio.c" alt="" coords="69,82,106,109" />
+<area shape="rect" href="$stdlib_8c.html" title="src/libc/stdlib.c" alt="" coords="130,82,168,109" />
+<area shape="rect" href="$terminate_8c.html" title="src/libc/terminate.c" alt="" coords="192,82,229,109" />
+<area shape="rect" href="$unistd_8h.html" title="src/libc/unistd.h" alt="" coords="253,82,290,109" />
+<area shape="rect" href="$xprintf_8c.html" title="src/libc/xprintf.c" alt="" coords="314,82,352,109" />
+</map>

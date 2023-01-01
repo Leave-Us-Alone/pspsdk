@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$structUsbInterface.html" title="USB driver interface." alt="" coords="13,7,50,34" />
+<area shape="rect" href="$structUsbEndpoint.html" title="USB driver endpoint." alt="" coords="74,7,111,34" />
+<area shape="rect" href="$structStringDescriptor.html" title="USB string descriptor." alt="" coords="135,7,173,34" />
+</map>

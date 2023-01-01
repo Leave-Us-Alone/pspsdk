@@ -1,0 +1,55 @@
+'\" t
+.\"     Title: zzip_dir_alloc_ext_io
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.75.2 <http://docbook.sf.net/>
+.\"      Date: 0.13.59
+.\"    Manual: zziplib Function List
+.\"    Source: zziplib
+.\"  Language: English
+.\"
+.TH "ZZIP_DIR_ALLOC_EXT_I" "3" "0\&.13\&.59" "zziplib" "zziplib Function List"
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+zzip_dir_alloc_ext_io, zzip_dir_alloc \- \&.\&.\&.
+.SH "SYNOPSIS"
+.sp
+.ft B
+.nf
+#include <zzip/lib\&.h>
+.fi
+.ft
+.HP \w'ZZIP_DIR\ *\ zzip_dir_alloc_ext_io('u
+.BI "ZZIP_DIR * zzip_dir_alloc_ext_io((zzip_strings_t\ *\ ext,\ const\ zzip_plugin_io_t\ io));"
+.HP \w'ZZIP_DIR\ *\ zzip_dir_alloc('u
+.BI "ZZIP_DIR * zzip_dir_alloc((zzip_strings_t\ *\ fileext));"
+.SH "DESCRIPTION"
+.PP
+the
+\fBzzip_dir_alloc\fR
+function is obsolete \- it was generally used for implementation and exported to let other code build on it\&. It is now advised to use
+\fBzzip_dir_alloc_ext_io\fR
+now on explicitly, just set that second argument to zero to achieve the same functionality as the old style\&.
+.SH "AUTHOR"
+.sp
+.RS 4
+.ie n \{\
+\h'-04'\(bu\h'+03'\c
+.\}
+.el \{\
+.sp -1
+.IP \(bu 2.3
+.\}
+Guido Draheim <guidod@gmx\&.de> Tomi Ollila <too@iki\&.fi>
+.RE
+.SH "COPYRIGHT"
+.PP
+Copyright (c) 1999,2000,2001,2002,2003 Guido Draheim All rights reserved, use under the restrictions of the Lesser GNU General Public License or alternatively the restrictions of the Mozilla Public License 1\&.1

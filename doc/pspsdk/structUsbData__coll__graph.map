@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$structUsbData_1_1Endp.html" title="UsbData::Endp" alt="" coords="9,10,46,37" />
+<area shape="rect" href="$structUsbData_1_1ConfDesc.html" title="UsbData::ConfDesc" alt="" coords="9,74,46,101" />
+<area shape="rect" href="$structUsbData_1_1Config.html" title="UsbData::Config" alt="" coords="9,138,46,165" />
+<area shape="rect" href="$structUsbData_1_1InterDesc.html" title="UsbData::InterDesc" alt="" coords="9,202,46,229" />
+<area shape="rect" href="$structUsbData_1_1Interfaces.html" title="UsbData::Interfaces" alt="" coords="9,266,46,293" />
+</map>
