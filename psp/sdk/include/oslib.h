@@ -11,7 +11,7 @@
 	#include <pspdebug.h>
 #else
 	#define _CRT_SECURE_NO_DEPRECATE
-	#include "oslib/emu.h"
+	#include "emu.h"
 #endif
 #include <stdlib.h>
 #include <stdio.h>
@@ -219,7 +219,7 @@ extern int osl_quit;
 extern int osl_standByUnpermitted;
 extern int (*osl_powerCallback)(int, int, void*);
 extern int (*osl_exitCallback)(int, int, void*);
-extern int osl_vblInterruptNumber;									//Numï¿½ro de l'interruption VBLANK utilisï¿½e
+extern int osl_vblInterruptNumber;									//Numéro de l'interruption VBLANK utilisée
 
 //Don't access these
 extern int osl_maxFrameskip, osl_vsyncEnabled, osl_frameskip;
@@ -378,7 +378,7 @@ oslPrintf("%i", oslNumberof(ram_files));
 
 /** Calculates the sine of an angle in degrees multiplicated by a radius. Returns the result as a float. oslSin and oslCos use the VFPU to compute the result, and thus it's very fast and very precise.
 	\param angle
-		Angle in degrees (360ï¿½ means a full circle)
+		Angle in degrees (360° means a full circle)
 	\param dist
 		Radius of the circle
 	\return
@@ -402,7 +402,7 @@ cY -= oslSin(cAngle, cSpeed);
 extern float oslSin(float angle, float dist);
 /** Calculates the cosine of an angle in degrees multiplicated by a radius. Returns the result as a float.
 	\param angle
-		Angle in degrees (360ï¿½ means a full circle)
+		Angle in degrees (360° means a full circle)
 	\param dist
 		Radius of the circle
 	\return
@@ -495,7 +495,7 @@ oslPrintf("Welcome...\n");
 */
 extern int oslBenchmarkTestEx(int startend, int slot);			//Permet de choisir un slot (0-3: user, 4:7: system)
 /** Same as oslBenchmarkTestEx but does a mean of 20 samples before returning a value. */
-extern int oslMeanBenchmarkTestEx(int startend, int slot);		//Benchmark systï¿½me sur une moyenne de 20 ï¿½chantillons
+extern int oslMeanBenchmarkTestEx(int startend, int slot);		//Benchmark système sur une moyenne de 20 échantillons
 /** Does a benchmark in the slot 0. Easier for testing. */
 extern inline int oslBenchmarkTest(int startend)		{
 	return oslBenchmarkTestEx(startend, 0);
@@ -584,26 +584,26 @@ extern inline int oslShowNeoflashLogo()		{
 
 
 //#include "vfpu.h"
-#include "oslib/oslmath.h"
+#include "oslmath.h"
 
-#include "oslib/vram_mgr.h"
-#include "oslib/VirtualFile.h"
-#include "oslib/drawing.h"
-#include "oslib/map.h"
-#include "oslib/text.h"
-#include "oslib/messagebox.h"
-#include "oslib/keys.h"
-#include "oslib/audio.h"
-#include "oslib/bgm.h"
-#include "oslib/usb.h"
-#include "oslib/dialog.h"
-#include "oslib/osk.h"
-#include "oslib/saveload.h"
-#include "oslib/net.h"
-#include "oslib/browser.h"
-#include "oslib/adhoc/pspadhoc.h"
-#include "oslib/ccc.h"
-#include "oslib/sfont.h"
+#include "vram_mgr.h"
+#include "VirtualFile.h"
+#include "drawing.h"
+#include "map.h"
+#include "text.h"
+#include "messagebox.h"
+#include "keys.h"
+#include "audio.h"
+#include "bgm.h"
+#include "usb.h"
+#include "dialog.h"
+#include "osk.h"
+#include "saveload.h"
+#include "net.h"
+#include "browser.h"
+#include "adhoc/pspadhoc.h"
+#include "ccc.h"
+#include "sfont.h"
 
 #ifdef __cplusplus
 }
