@@ -2690,6 +2690,23 @@ PNG_EXPORT(void,png_save_uint_16)
 #define PNG_HAVE_gAMA               0x20
 #define PNG_HAVE_cHRM               0x40
 
+#define int_p_NULL                (int *)NULL
+#define png_bytep_NULL            (png_bytep)NULL
+#define png_bytepp_NULL           (png_bytepp)NULL
+#define png_doublep_NULL          (png_doublep)NULL
+#define png_error_ptr_NULL        (png_error_ptr)NULL
+#define png_flush_ptr_NULL        (png_flush_ptr)NULL
+#define png_free_ptr_NULL         (png_free_ptr)NULL
+#define png_infopp_NULL           (png_infopp)NULL
+#define png_malloc_ptr_NULL       (png_malloc_ptr)NULL
+#define png_read_status_ptr_NULL  (png_read_status_ptr)NULL
+#define png_rw_ptr_NULL           (png_rw_ptr)NULL
+#define png_structp_NULL          (png_structp)NULL
+#define png_uint_16p_NULL         (png_uint_16p)NULL
+#define png_voidp_NULL            (png_voidp)NULL
+#define png_write_status_ptr_NULL (png_write_status_ptr)NULL
+#define png_set_gray_1_2_4_to_8   png_set_expand_gray_1_2_4_to_8
+
 #ifdef __cplusplus
 }
 #endif
