@@ -1,9 +1,9 @@
 #ifndef NET_H
 #define NET_H
 
-#include <sys/select.h>
+#include <sys/fd_set.h>
 
-/** @defgroup Network Network
+/** @defgroup Network
 
 	Network functions
 	@{
@@ -93,11 +93,11 @@ int oslNetTerm();
 int oslGetIPaddress(char *IPaddress);
 
 /**Tries to connect to an Access Point using the given configuration
-	\param config
+	\param int config
         Index of the configuration to use
-	\param timeout
+	\param int timeout
         Timeout (in seconds) for the connection
-	\param *apctlCallback
+	\param int (*apctlCallback)(int state)
         Pointer to a callback function. It will be called with the current state
 */
 int oslConnectToAP(int config, int timeout, int (*apctlCallback)(int state));

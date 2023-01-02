@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-/** @defgroup Browser Browser
+/** @defgroup Browser
 
 	Functions to display Sony's internet browser
 	@{
@@ -20,17 +20,7 @@ extern "C" {
 	\param url
         The url to open
     \param downloadDir
-        The default download directory
-    \param browserMemory
-        The amount of memory to allocate for the browser
-    \param displaymode
-        One of pspUtilityHtmlViewerDisplayModes
-    \param options
-        One of pspUtilityHtmlViewerOptions
-    \param interfacemode
-        One of pspUtilityHtmlViewerInterfaceModes
-    \param connectmode
-        One of pspUtilityHtmlViewerConnectModes
+        The default
 
 */
 int oslBrowserInit(char *url, char *downloadDir, int browserMemory, unsigned int displaymode, unsigned int options, unsigned int interfacemode, unsigned int connectmode);

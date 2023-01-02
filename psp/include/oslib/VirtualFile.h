@@ -133,8 +133,6 @@ void VirtualFileInit();
 /** Open a new file.
 	\param param1
 		Pointer to a string representing the file name.
-	\param param2
-		Should always be 0
 	\param type
 		File type. By default, can be:
 			- VF_MEMORY: read/write from a memory block
@@ -232,7 +230,7 @@ extern void *oslReadEntireFileToMemory(VIRTUAL_FILE *f, int *size);
 
 
 /*
-	Source par dï¿½faut: mï¿½moire
+	Source par défaut: mémoire
 */
 extern int vfsMemOpen(void *param1, int param2, int type, int mode, VIRTUAL_FILE* f);
 extern int vfsMemClose(VIRTUAL_FILE *f);
@@ -266,7 +264,7 @@ int oslInitVfsFile();
 	\param source
 		Can be VF_FILE, VF_MEMORY or any virtual file device registered by you.
 */
-static inline void oslSetDefaultVirtualFileSource(int source)		{
+extern inline void oslSetDefaultVirtualFileSource(int source)		{
 	osl_defaultVirtualFileSource = source;
 }
 
@@ -288,7 +286,7 @@ extern int VF_FILE;
 
 
 /** Gets the name of the temporary file. See #oslSetTempFileData for a code sample. */
-static inline char *oslGetTempFileName()		{
+extern inline char *oslGetTempFileName()		{
 	return (char*)osl_tempFileName;
 }
 

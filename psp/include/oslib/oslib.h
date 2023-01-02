@@ -48,7 +48,7 @@ extern "C" {
 */
 
 /** OSLib version */
-#define OSL_VERSION "MODv2 1.1.2"
+#define OSL_VERSION "MOD 1.1.2"
 
 extern int osl_intraInit;
 
@@ -219,7 +219,7 @@ extern int osl_quit;
 extern int osl_standByUnpermitted;
 extern int (*osl_powerCallback)(int, int, void*);
 extern int (*osl_exitCallback)(int, int, void*);
-extern int osl_vblInterruptNumber;									//Numï¿½ro de l'interruption VBLANK utilisï¿½e
+extern int osl_vblInterruptNumber;									//Numéro de l'interruption VBLANK utilisée
 
 //Don't access these
 extern int osl_maxFrameskip, osl_vsyncEnabled, osl_frameskip;
@@ -231,7 +231,7 @@ as arguments. */
 extern int oslSyncFrameEx(int frameskip, int max_frameskip, int vsync);
 
 /** Sets the framerate for oslSyncFrame(Ex). This can be any value from 1 to 60. For example, use 50 to simulate a PAL (european) game. */
-static inline void oslSetFramerate(int framerate)		{
+extern inline void oslSetFramerate(int framerate)		{
 	if (framerate <= 60)
 		osl_currentFrameRate = framerate;
 }
@@ -287,18 +287,18 @@ debug. */
 
 #ifdef PSP
 	/** Flushes the whole cache. This is slow, absolutely avoid it! Use oslUncacheData instead if possible. */
-	extern void oslFlushDataCache();
+	extern inline void oslFlushDataCache();
 #else
 	extern void oslFlushDataCache();
 #endif
 
 /** Allocates a memory block, ensuring it is aligned.
-	\param alignment
+	\param 1
 		Alignment in bytes
-	\param size
+	\param 2
 		Size of the block
 */
-void *memalign(size_t alignment, size_t size);
+void *memalign(size_t, size_t);
 
 /** Structure for the return value of oslGetRamStatus. */
 typedef struct		{
@@ -378,7 +378,7 @@ oslPrintf("%i", oslNumberof(ram_files));
 
 /** Calculates the sine of an angle in degrees multiplicated by a radius. Returns the result as a float. oslSin and oslCos use the VFPU to compute the result, and thus it's very fast and very precise.
 	\param angle
-		Angle in degrees (360ï¿½ means a full circle)
+		Angle in degrees (360° means a full circle)
 	\param dist
 		Radius of the circle
 	\return
@@ -402,7 +402,7 @@ cY -= oslSin(cAngle, cSpeed);
 extern float oslSin(float angle, float dist);
 /** Calculates the cosine of an angle in degrees multiplicated by a radius. Returns the result as a float.
 	\param angle
-		Angle in degrees (360ï¿½ means a full circle)
+		Angle in degrees (360° means a full circle)
 	\param dist
 		Radius of the circle
 	\return
@@ -495,9 +495,9 @@ oslPrintf("Welcome...\n");
 */
 extern int oslBenchmarkTestEx(int startend, int slot);			//Permet de choisir un slot (0-3: user, 4:7: system)
 /** Same as oslBenchmarkTestEx but does a mean of 20 samples before returning a value. */
-extern int oslMeanBenchmarkTestEx(int startend, int slot);		//Benchmark systï¿½me sur une moyenne de 20 ï¿½chantillons
+extern int oslMeanBenchmarkTestEx(int startend, int slot);		//Benchmark système sur une moyenne de 20 échantillons
 /** Does a benchmark in the slot 0. Easier for testing. */
-static inline int oslBenchmarkTest(int startend)		{
+extern inline int oslBenchmarkTest(int startend)		{
 	return oslBenchmarkTestEx(startend, 0);
 }
 /** Displays the system benchmark results on the top-left corner of the screen. Useful for debugging: you know that if the first number approaches or exceeds 16.6 then your game has insufficient performance (for 60 fps). */
@@ -547,7 +547,7 @@ int main(void)
 
 	These files can be found in the Resource folder of your OSLib distribution.
 */
-static inline int oslShowSplashScreen(int splashType)		{
+extern inline int oslShowSplashScreen(int splashType)		{
 	if (splashType == 1)
 		return oslShowSplashScreen1();
 	else if (splashType == 2)
@@ -555,7 +555,7 @@ static inline int oslShowSplashScreen(int splashType)		{
 	return 0;
 }
 
-static inline int oslShowNeoflashLogo()		{
+extern inline int oslShowNeoflashLogo()		{
 	return oslShowSplashScreen(2);
 }
 

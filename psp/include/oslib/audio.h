@@ -103,7 +103,7 @@ extern void oslDeinitAudio();
 	\params formats
 		One or more of the #oslInitAudioME_formats values, added together.
 
-\b Note: Might require a HEN/CFW to work on firmware older than version 2.0! See the source code for more info. */
+\b Important: Requires to be executed in kernel mode! Look for kernel mode programs in the documentation. */
 extern void oslInitAudioME(int formats);
 
 //extern void oslClearAudio();
